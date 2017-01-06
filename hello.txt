@@ -2,4 +2,4 @@
 
 さようなら
 
-in develop
+no ff
