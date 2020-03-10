@@ -1,0 +1,18 @@
+version: 2
+ 
+jobs:
+  test:
+    docker:
+      - image: circleci/php:7.4.3
+    working_directory: ./
+    steps:
+      - checkout
+      - run:
+          name: Run test
+          command: 'php hello.php'
+ 
+workflows:
+  version: 2
+  workflows:
+    jobs:
+      - test
