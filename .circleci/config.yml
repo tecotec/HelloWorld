@@ -1,5 +1,9 @@
-version: 2
- 
+workflows:
+  version: 2
+  workflows:
+    jobs:
+      - test
+
 jobs:
   test:
     docker:
@@ -11,8 +15,3 @@ jobs:
           name: Run test
           command: 'php hello.php'
  
-workflows:
-  version: 2
-  workflows:
-    jobs:
-      - test
